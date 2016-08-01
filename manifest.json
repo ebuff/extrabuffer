@@ -1,0 +1,26 @@
+{
+  "name": "sharely",
+  "version": "1.0",
+  "manifest_version": 2,
+  "description": "share the thinks easily..",
+
+  "background": {
+    "persistent": false,
+    "scripts": ["js/jquery-1.11.2.min.js","js/popup.js","js/sh_context.js"]
+  },
+  "icons": {
+          "16": "icon.png"
+      },
+  "browser_action": {
+    "default_icon": "icon.png",
+    "default_popup": "popup.html"
+  },
+    
+  "permissions": [
+    "activeTab",
+    "contextMenus",
+      "storage",
+      "notifications",
+      "http://www.extrabuffer.com/*"
+  ]
+}
